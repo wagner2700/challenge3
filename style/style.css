@@ -693,7 +693,7 @@ header{
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
     margin-top: 20px;
     width: 98%;
-    height:90% ;
+    height:100% ;
     
 }
 
@@ -793,7 +793,7 @@ footer {
     width: 100%;
     white-space:normal;
     transition-duration: 3s;
-    height: 500px
+    height: 550px
 }
 
 /* .triger-input7:checked + .discussion .topic{
@@ -816,11 +816,28 @@ footer {
 }
 
 .titleTopic2{
+    display: flex;
+    justify-content: space-between;
     padding: 10px 15px;
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
+}
+.iconsTitleTopic{
+
+    display: flex;
+    width: 7%;
+    justify-content: space-between;
+    margin-right: 20px;
+    align-items: center;
+}
+.iconsTitleTopic h4{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ED7839;
 }
 
 .personDescriptionTopic p{
