@@ -88,13 +88,15 @@ header{
 }
 
 .logo{
-    width: 260px;
-    grid-column:2;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    grid-column:1;
     display: flex;
     flex-direction: column;
     background-color:  #FFFFFF;
     box-shadow:0 0 1em #b6b0b0;
-    he
+   
     
 }
 
@@ -233,9 +235,9 @@ header{
     padding-top: 20px;
 }
 .menudetails{
-    margin-top: 15px;
+    /* margin-top: 15px; */
     width: 100%;
-    height: 100%;
+    height: 85%;
     font-family: 'Quicksand';
     font-size: 14px;
     border: 1px solid #ECECEC;
@@ -279,7 +281,7 @@ header{
 
 .university{
     font-size: 12px;
-    margin-top: 130px;
+    margin-top: 120px;
 }
 .names{
     margin-top: 5px;
@@ -697,7 +699,7 @@ header{
 
 .boxOrange{
     display: flex;
-    width: 100%;
+    width: 15%;
     height: 68px;
     background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
     color: white;
@@ -844,13 +846,26 @@ footer {
     width: 100%;
     
 }
-
 .imgFooter{
     display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 200px;
+}
+.imgFooter img{
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    
+    
+    
 
 }
 @media (max-width: 700px){
-
+    
+    header{
+        height: 100px;
+    }
     .main{
         display: flex;
     }
@@ -860,11 +875,16 @@ footer {
     .description h2{
         width: 100%;
     }
-    
+.boxOrange{
+    display: none;
+}
+.wrapper{
+    height: 100px;
+}
     
     .headerMobile{
         display: flex;
-        height: 68px;
+        height: 90px;
         width: 100vw;
         justify-content: space-between;
        
@@ -918,7 +938,7 @@ footer {
         width: 100%;
         height: 100%;
         border-radius: 4px;
-        
+        padding: 0;
     }
 
     .main2{
@@ -991,5 +1011,22 @@ footer {
         white-space:normal;
         transition-duration: 3s;
         height: 550px
+    }
+footer{
+    margin: 0;
+}
+    .imgFooter{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100px;
+        margin-left: 30px;
+    }
+
+    .imgFooter img{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin-top: 20px;
     }
 }
