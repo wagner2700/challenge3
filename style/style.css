@@ -857,6 +857,10 @@ footer {
     .logo{
         display: none;
     }
+    .description h2{
+        width: 100%;
+    }
+    
     
     .headerMobile{
         display: flex;
@@ -924,6 +928,7 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 0;
+        
     }
     .resume{
         margin: 20px 0px 20px 0px ;
@@ -938,6 +943,7 @@ footer {
         align-content: center;
         margin: 0;
         margin-top: 5px;
+    
     }
 
     .topic .iconsTopic{
@@ -949,5 +955,41 @@ footer {
         width: 30%;
     }
 
-}
+    .trigger-input:checked + .resume .lorem  {
 
+        transition-delay: 0.5s;
+        white-space:normal;
+        overflow:visible;
+    
+    }
+    .trigger-input:checked + .resume {
+        display: block;
+        white-space:normal;
+        height: 1300px;
+        transition-duration: 0.5s;
+    }
+
+    .whiteTopic{
+        height: 150px;
+    }
+    .graytopic{
+        height: 150px;
+    }
+
+    .topicWrapper{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    .triger-input7:checked + .TopicPerson {
+        display: block;
+        width: 100%;
+        white-space:normal;
+        transition-duration: 3s;
+        height: 550px
+    }
+}
