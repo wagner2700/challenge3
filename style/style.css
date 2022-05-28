@@ -127,12 +127,12 @@ header{
 
 .page{
     display: flex;
-    height: 100v%;
+    height: 100vh;
 }
 
 .main{
     display: grid;
-    height: auto;
+    height: 50%;
     grid-template-columns: 15% 65% 20%;
     
     
@@ -173,7 +173,7 @@ header{
 
 .menuright{
     grid-column: 3;
-    padding-right: 20%;
+    /* padding-right: 20%; */
     height:90%;
     width: 90%;
     display: flex;
@@ -235,7 +235,7 @@ header{
     padding-top: 20px;
 }
 .menudetails{
-    /* margin-top: 15px; */
+    margin-top: 40px;
     width: 100%;
     height: 85%;
     font-family: 'Quicksand';
@@ -281,7 +281,7 @@ header{
 
 .university{
     font-size: 12px;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 .names{
     margin-top: 5px;
@@ -337,13 +337,18 @@ header{
     transition-delay: 0.5s;
     white-space:normal;
     overflow:visible;
+    
 
 }
 .trigger-input:checked + .resume {
     display: block;
     white-space:normal;
-    height: 550px;
+    height:600px;
+    width: 95%;
+    max-height: 80%;
     transition-duration: 0.5s;
+    overflow:auto;
+
 }
 
 
@@ -757,6 +762,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height:100% ;
 }
 
 footer {
@@ -855,7 +861,7 @@ footer {
     height: 130px;
 }
 
-.
+
 
 .graytopic{
     display: flex;
@@ -885,6 +891,7 @@ footer {
     }
     .main{
         display: flex;
+
     }
     .logo{
         display: none;
@@ -965,6 +972,7 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 0;
+        height: 100%;
         
     }
     .resume{
@@ -982,9 +990,20 @@ footer {
         margin-top: 5px;
     
     }
+    
+    .topic{
+        
+        padding: 10px 10px;
+    }
 
+    .likeTopic{
+        display: flex;
+        height: 40px;
+        width: 220px;
+        
+    }
     .topic .iconsTopic{
-        width: 100%;
+        width: 500px;
         display: flex;
         justify-content: flex-start
     }
@@ -997,13 +1016,15 @@ footer {
         transition-delay: 0.5s;
         white-space:normal;
         overflow:visible;
+        
     
     }
     .trigger-input:checked + .resume {
         display: block;
         white-space:normal;
-        height: 1300px;
+        height: 1500px;
         transition-duration: 0.5s;
+        overflow: auto;
     }
 
     .whiteTopic{
