@@ -330,7 +330,7 @@ header{
 
     transition-delay: 0.5s;
     white-space:normal;
-    overflow:visible
+    overflow:visible;
 
 }
 .trigger-input:checked + .resume {
@@ -637,6 +637,9 @@ header{
 .triggerTopic , .trigguer3-input , .trigguer2-input{
     display: none;
 }
+.triggerTopic{
+    display: none;
+}
 
  .icons{
     display: flex;
@@ -711,7 +714,7 @@ header{
 
 }
 .triger-input7{
-    display: none;
+    display: block;
 }
 
 
@@ -748,8 +751,6 @@ header{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height:auto
-    
 }
 
 footer {
@@ -781,12 +782,12 @@ footer {
     
 }
 
-.triger-input7:checked + .discussion .TopicPerson {
+.triger-input7:checked + .TopicPerson {
     display: block;
     width: 100%;
     white-space:normal;
     transition-duration: 3s;
-    height: 90%
+    height: 500px
 }
 
 /* .triger-input7:checked + .discussion .topic{
@@ -838,6 +839,11 @@ footer {
     flex-direction: column;
     width: 100%;
     
+}
+
+.imgFooter{
+    display: flex;
+
 }
 @media (max-width: 700px){
 
@@ -908,10 +914,12 @@ footer {
     }
 
     .main2{
-        display: flex;  
+        margin: 0;
+        display: flex; 
+        justify-content: center; 
         flex-direction: column;
         align-items: center;
-        
+        gap: 0;
     }
     .resume{
         margin: 20px 0px 20px 0px ;
@@ -923,9 +931,19 @@ footer {
     .discussion{
         display: flex;
         flex-direction: column;
-        margin-top: 100px ;
         align-content: center;
         height: 670px;
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    .topic .iconsTopic{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start
+    }
+    .likeTopic{
+        width: 30%;
     }
 
 }
