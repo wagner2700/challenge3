@@ -83,6 +83,9 @@ header{
     
     
 }
+.headerMobile{
+    height: 100vh;
+}
 
 .logo{
     width: 260px;
@@ -91,6 +94,7 @@ header{
     flex-direction: column;
     background-color:  #FFFFFF;
     box-shadow:0 0 1em #b6b0b0;
+    he
     
 }
 
@@ -121,7 +125,7 @@ header{
 
 .page{
     display: flex;
-    height: 1700px
+    height: 100v%;
 }
 
 .main{
@@ -361,7 +365,7 @@ header{
     margin-left: 27px;
     justify-items: center;
     padding-bottom: 20px; 
-    height: 680px;
+    
 }
 
 
@@ -714,7 +718,7 @@ header{
 
 }
 .triger-input7{
-    display: block;
+    display: none;
 }
 
 
@@ -932,7 +936,6 @@ footer {
         display: flex;
         flex-direction: column;
         align-content: center;
-        height: 670px;
         margin: 0;
         margin-top: 5px;
     }
