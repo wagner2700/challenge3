@@ -2,8 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 body{
+    
     background-color: #FFFFFF;
     
 }
@@ -787,12 +789,7 @@ header{
 }
 
 footer {
-   
-    margin-left: 60px;
-    display: flex;
-    justify-content: center;
-    width: 95%;
-    height: 100px
+    display: none;
 }
 
 
@@ -917,229 +914,156 @@ footer {
 
 
 @media (max-width: 700px){
-    
-    header{
-        height: 100px;
-        width: 100vw;
-    }
-    .main{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+  
+.menuright{
+    display: none;
+}
+.logo{
+    display: none;
+}
 
-    body{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .logo{
-        display: none;
-    }
-    .description h2{
-        width: 100%;
-    }
-
-    .menubutton{
-        display: none;
-    }
 .boxOrange{
     display: none;
 }
+
+.main{
+    display: flex;
+    height: auto;
+}
+
+footer{
+    
+}
+
 .wrapper{
-    height: 100px;
+    width: 100vw;
+    padding-left: 5px;
+    padding-top: 5px;
+    height: 100%;
 }
+
+.wrapper h2 {
+    font-size: 20px;
+}
+.wrapper h3{
+    font: 10px;
+}
+.email{
+    display: none;
+}
+header{
+    height: 130px;
+}
+.painel{
+    height: 8%;
+    padding-top:20px;
+    display: flex;
+    flex-direction: column-reverse;
+    width:30%;
+}
+
+.description{
+    width:100vw;
+    padding-left:10px;
+    padding-right:10px
+}
+.description h2{
+    text-align: justify;
     
-    .headerMobile{
-        display: flex;
-        height: 90px;
-        width: 100vw;
-        justify-content: space-between;
-       
-    }
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+}
 
-    .title{
-        display: flex;
-        justify-content: center;
-        
-        
-    }
-    .title h2{
-        
-        font-size: 85%;
-        
-    }
+.video{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-   .painel {
-       width: 20%;
-       display: flex;
-       justify-content: flex-end;
-       margin-right: 25px;
-   }
-    .linguage{
-        display: none;
-    }
-    .email{
-        display: none;
-    }
+.video img{
+    margin-top:10px;
+    width:97%;
+    height: 100%;
+    padding: 0;
+}
 
-    .menuright{
-        display: none;
-    }
+.menubutton{
+    margin-top: 10px;
+    height: 50px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
 
-    .description{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        align-items: center;
-       height: 150px;
-    }
+.staricons{
+    width: 70%;
+}
 
-    .video {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 90%;
-        
-    }
-
-    .video img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70%;
-        height: 100%;
-        border-radius: 4px;
-        padding: 0;
-        margin-top: 0;
-    }
-
-    .main2{
-        width: 100%;
-        display: flex; 
-        justify-content: center; 
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-        height: 100%;
-        
-    }
-    .resume{
-        margin: 20px 0px 1.5% 0px ;
-        width: 100%;
-        
-        
-    }
-
-    .discussion{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        margin: 0;
-        margin-top: 5px;
-        width: 100%;
-    
-    }
-    
-    .topic{
-        
-        width: 100%;
-    }
-
-    .whiteTopic{
-        
-        height: 180px;
-        
-    }
-    .likeTopic{
-        display: flex;
-        height: 40px;
-        width: 220px;
-        
-    }
-    .topic .iconsTopic{
-        width: 500px;
-        display: flex;
-        justify-content: flex-start
-    }
-    .likeTopic{
-        width: 30%;
-    }
-
-    .trigger-input:checked + .resume .lorem  {
-
-        transition-delay: 0.5s;
-        white-space:normal;
-        overflow:visible;
-        
-    
-    }
-    .trigger-input:checked + .resume {
-        display: block;
-        white-space:normal;
-        height: 1200px;
-        width: 100%;
-        transition-duration: 0.5s;
-        overflow: auto;
-    }
-
-    .whiteTopic{
-        height: 150px;
-    }
-    .graytopic{
-        height: 150px;
-    }
-
-    .topicWrapper{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        
-    }
-    
-     
-    .triger-input7:checked + .TopicPerson {
-        display: block;
-        width: 100%;
-        white-space:normal;
-        transition-duration: 3s;
-        height: 1000px
-    }
-
-    .iconsTitleTopic{
-        padding-right: 70px;
-    }
-
-
-    footer{
+.resume {
+    display: flex;
+    flex-direction: column;
     margin: 0;
+    width :100vw
 }
-    .imgFooter{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 100px;
-        margin-left: 30px;
-    }
 
-    .imgFooter img{
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        margin-top: 20px;
-    }
-    .lorem{
-        height: 50px;
-        white-space:wrap;
-        text-overflow:ellipsis;
-        overflow: hidden;
-        
+.trigger-input:checked + .resume {
+    display: block;
+    grid-row: 2;
+    white-space:normal;
+    height:600px;
+    width: 100vw;
+    /* max-height: 80%; */
+    transition-duration: 1s;
+    overflow:auto;
+
+}
+
+
+
+
+.main2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discussion{
+    margin: 0;
+    width: 100vw;
     
-    }
+}
+
+.likeTopic{
+    width: 40%;
+}
+.topic{
+    height: 240px;
+}
+.TopicPerson{
+    height: 10000px;
+}
+.personDescriptionTopic{
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+.whiteTopic{
+    height: 150px;
+}
+
+.triger-input7:checked + .TopicPerson {
+    display: block;
+    width: 100vw;
+    white-space:normal;
+    transition-duration: 1s;
+    height: 950px;
+    animation-delay: 2s;
+}
+
+.iconsTitleTopic{
+    margin-right: 20%;
+}
 }
