@@ -905,6 +905,17 @@ footer {
     
 
 }
+
+.logo button:hover{
+    background-color: #FDF1EB;
+    border-left: 6px solid transparent;
+    border-image: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
+    border-image-slice: 1;
+    border-bottom: transparent;
+    
+}
+
+
 @media (max-width: 700px){
     
     header{
