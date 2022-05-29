@@ -88,7 +88,7 @@ header{
 }
 
 .logo{
-    width: 86%;
+    width: 80%;
     height: 100%;
     grid-column:1;
     display: flex;
@@ -132,7 +132,8 @@ header{
 .main{
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 5% 450px 15% 20% 20% 20%;
+    grid-template-rows: 5% 450px 15% 20% 20% 20% 5% ;
+    flex-wrap: wrap;
     
     
 }
@@ -174,29 +175,43 @@ header{
 
 .menuright{
     grid-column: 3;
-    grid-row: 1/ 4;
-    height:75.5%;
-    width: 100%;
+    grid-row: 2 / 3;
+    height:100%;
+    width: 88%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 35px;
+    flex-wrap: wrap;
     
 }
 
 .menubutton{
+    grid-column: 3;
+    grid-row: 1;
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    flex-direction: column;
     width: 100%;
     height: 30px;
     justify-content: space-between;
     
+    
 }
 .menubutton button {
+
     color: white;
     background-color: #ED7839;
     border: none;
     border-radius: 4px;
+}
+
+.staricons{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 87%;
 }
 
 .citacao h3{
@@ -236,9 +251,9 @@ header{
     padding-top: 20px;
 }
 .menudetails{
-    grid-row: 2 / 3;
-        width: 100%;
-    height: 80%;
+    grid-row: 1 / 3;
+    width: 100%;
+    height: 550px;
     font-family: 'Quicksand';
     font-size: 14px;
     border: 1px solid #ECECEC;
@@ -291,8 +306,8 @@ header{
 
 .resume{
     grid-column: 1 / 4;
-    grid-row: 2 /  5;
-    height: 100px;
+    grid-row: 2 / 3;
+    
     margin-top: 70px;
     border: 1px solid #ECECEC;
     width: 95%;
@@ -331,12 +346,11 @@ header{
 
 }
 .trigger-input{
-    display: block;
+    display: none;
 }
 
 .trigger-input:checked + .resume .lorem  {
 
-    transition-delay: 0.5s;
     white-space:normal;
     overflow:visible;
     
@@ -344,12 +358,12 @@ header{
 }
 .trigger-input:checked + .resume {
     display: block;
-    grid-row: 3 / 5;
+    grid-row: 2;
     white-space:normal;
-    height:800px;
+    height:600px;
     width: 95%;
-    max-height: 80%;
-    transition-duration: 0.5s;
+    /* max-height: 80%; */
+    transition-duration: 1s;
     overflow:auto;
 
 }
@@ -369,7 +383,7 @@ header{
 
 .discussion{
     grid-column: 1 / 4;
-    grid-row: 5  ;
+    grid-row: 3 ;
     display:flex;
     flex-direction: column;
     border: solid 1px #ECECEC;
@@ -386,9 +400,12 @@ header{
 
 .triggerTopic:checked + .discussion .sendDiscussion   {
     display:block;
+    transition-duration: 1s;
+    
    
 }
 .triggerTopic:checked +.discussion .subDiscussion {
+    
 
     display: none;
       
@@ -547,7 +564,7 @@ header{
     
 }
 
-.trigguer3-input:checked + .test12 . .sendDiscussion{
+.trigguer3-input:checked + .test12 .sendDiscussion{
     display: block;
     
 }
@@ -711,7 +728,7 @@ header{
 
 .boxOrange{
     display: flex;
-    width: 15%;
+    width: 19.5%;
     height: 68px;
     background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
     color: white;
@@ -767,8 +784,7 @@ header{
     display: grid;
     grid-row: 3;
     grid-column: 2 / 4;
-   
-
+    margin-top: 20px;
     gap: 20px;
     height:100% ;
 }
@@ -806,13 +822,12 @@ footer {
     display: block;
     width: 100%;
     white-space:normal;
-    transition-duration: 3s;
-    height: 550px
+    transition-duration: 1s;
+    height: 550px;
+    animation-delay: 2s;
 }
 
-/* .triger-input7:checked + .discussion .topic{
-    padding-bottom: 0 ;
-} */
+
 
 .triger-input7:checked + .discussion {
    display: block;
@@ -882,11 +897,12 @@ footer {
     justify-content: flex-end;
     width: 100%;
     height: 200px;
+    
 }
 .imgFooter img{
-    padding: 20px;
-    display: flex;
-    width: 100%;
+    
+    
+    width: 80%;
     
     
     
@@ -899,13 +915,17 @@ footer {
     }
     .main{
         display: flex;
-
+        flex-direction: column;
     }
     .logo{
         display: none;
     }
     .description h2{
         width: 100%;
+    }
+
+    .menubutton{
+        display: none;
     }
 .boxOrange{
     display: none;
@@ -969,7 +989,7 @@ footer {
     }
 
     .video img {
-        width: 100%;
+        width: 95%;
         height: 100%;
         border-radius: 4px;
         padding: 0;
